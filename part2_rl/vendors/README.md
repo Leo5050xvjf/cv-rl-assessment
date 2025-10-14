@@ -1,5 +1,11 @@
 # Diffusion Policy Environment Setup and Evaluation Guide
 
+
+
+## 0. 環境
+```bash
+Development Environment: Remote VSCode + WSL2 (Ubuntu 24.04)
+```
 ## 1. 安裝必要套件
 ```bash
 sudo apt install -y libosmesa6-dev libgl1-mesa-glx libglfw3 patchelf
@@ -57,11 +63,34 @@ export WANDB_DISABLED=true
 python train.py \
 --config-dir=. \
 --config-name=image_pusht_diffusion_policy_cnn.yaml \
-dataloader.batch_size=16 val_dataloader.batch_size=16 \
-dataloader.num_workers=0 val_dataloader.num_workers=0 \
-training.num_epochs=200 training.rollout_every=1 \
-training.sample_every=999999 training.checkpoint_every=10 \
-task.env_runner.n_train=1 task.env_runner.n_test=1 \
-task.env_runner.n_train_vis=0 task.env_runner.n_test_vis=0 \
-logging.mode=offline training.device=cuda:0
+dataloader.batch_size=16 \
+val_dataloader.batch_size=16 \
+dataloader.num_workers=0 \
+val_dataloader.num_workers=0 \
+training.num_epochs=200 \
+training.rollout_every=1 \
+training.sample_every=999999 \
+training.checkpoint_every=10 \
+task.env_runner.n_train=1 \
+task.env_runner.n_test=1 \
+task.env_runner.n_train_vis=0 \
+task.env_runner.n_test_vis=0 \
+logging.mode=offline \
+training.device=cuda:0
 ```
+
+
+## 📊 Results
+- **v1**: 約在 **50 epochs** 時成功率達 **0.9**
+- **v2**: 因硬體限制，尚未完成訓練
+
+## ⚙️ Implementation Process
+1. Clone **Diffusion Policy (DP)** 專案並下載公司數據  
+2. 根據個人硬體條件設置訓練參數
+
+## 🔍 Analysis and Observations
+1. 在 **50 epochs 以前**，模型幾乎無法穩定找到方塊位置，或一旦出現偏差就無法修正。  
+2. 在 **50 epochs 之後**，可明顯感受到模型更容易維持方塊於目標區域內。  
+3. 即使在後期，當發生較大偏差時，模型仍會陷入無法回復正確軌跡的情況。
+
+
