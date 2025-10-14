@@ -59,6 +59,17 @@ bash train.sh
 
 ---
 
+
+
+## Results
+
+| Label Visualization | Detection Results |
+|----------------------|-------------------|
+| ![Labels](part1_cv/res/labels.jpg) | ![Results](part1_cv/res/results.png) |
+
+
+
+
 ## Notes
 
 - Ensure that the Grounded-SAM2 environment (`gsam2`) is properly set up.
