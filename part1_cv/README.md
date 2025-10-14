@@ -65,7 +65,10 @@ bash train.sh
 
 | Label Visualization | Detection Results |
 |----------------------|-------------------|
-| ![Labels](part1_cv/res/labels.jpg) | ![Results](part1_cv/res/results.png) |
+| ![Labels](res/labels.jpg) | ![Results](res/results.png)|
+
+
+
 
 
 
