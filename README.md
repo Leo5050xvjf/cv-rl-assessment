@@ -15,12 +15,14 @@ cd cv-rl-assessment/part1_cv/yolov11-seg_ros
 
 ## 2. Prepare ROS Data
 
+
 Place your `.db3` file under the following path:
 
 ```
 ros_data/
 └── interview_perception_exam01/
     ├── interview_perception_exam01_0.db3
+    ├── metadata.yaml
 ```
 
 ---
