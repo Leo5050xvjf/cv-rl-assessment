@@ -1,0 +1,6 @@
+[submodule "part1_cv/yolov11-seg_ros"]
+	path = part1_cv/yolov11-seg_ros
+	url = git@github.com:Leo5050xvjf/yolov11-seg_ros.git
+[submodule "part2_rl/vendors/diffusion_policy"]
+	path = part2_rl/vendors/diffusion_policy
+	url = git@github.com:Leo5050xvjf/diffusion_policy.git
