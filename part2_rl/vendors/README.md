@@ -44,7 +44,7 @@ python eval.py --checkpoint data/epoch=0550-test_mean_score=0.969.ckpt --output_
 ```
 
 
-### 9.3 訓練指令
+### 7.3 訓練指令
 
 ```bash
 export MUJOCO_GL=egl
