@@ -23,32 +23,22 @@ mkdir data && cd data
 
 ## 5. 下載 PushT 資料集
 ```bash
-wget https://diffusion-policy.cs.columbia.edu/data/training/pusht.zip
+# https://drive.google.com/drive/folders/1tL7WRNSsIjPAGuD5yAJuRMJKIe-DAz0J
 ```
 
-## 6. 解壓資料集
-```bash
-unzip pusht.zip && cd ..
-```
-
-## 7. 下載 PushT 模型配置檔案
-```bash
-wget -O image_pusht_diffusion_policy_cnn.yaml https://diffusion-policy.cs.columbia.edu/data/experiments/image/pusht/diffusion_policy_cnn/config.yaml
-```
-
-## 8. 下載訓練好的模型（放入 `data` 目錄）
+## 6. 下載訓練好的模型（放入 `data` 目錄）
 ```bash
 wget -O data/epoch=0550-test_mean_score=0.969.ckpt https://diffusion-policy.cs.columbia.edu/data/experiments/low_dim/pusht/diffusion_policy_cnn/train_0/checkpoints/epoch=0550-test_mean_score=0.969.ckpt
 ```
 
-## 9. 執行模型評估
+## 7. 執行模型評估
 
-### 9.1 設定環境變數
+### 7.1 設定環境變數
 ```bash
 export HYDRA_FULL_ERROR=1
 ```
 
-### 9.2 執行評估指令
+### 7.2 執行評估指令
 ```bash
 python eval.py --checkpoint data/epoch=0550-test_mean_score=0.969.ckpt --output_dir data/pusht_eval_output
 ```
