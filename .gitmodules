@@ -1,9 +1,13 @@
 [submodule "part1_cv/yolov11-seg_ros"]
 	path = part1_cv/yolov11-seg_ros
 	url = git@github.com:Leo5050xvjf/yolov11-seg_ros.git
+	branch = main
 [submodule "part2_rl/vendors/diffusion_policy"]
 	path = part2_rl/vendors/diffusion_policy
 	url = git@github.com:Leo5050xvjf/diffusion_policy.git
 [submodule "part1_cv/vendors/Grounded-SAM-2"]
 	path = part1_cv/vendors/Grounded-SAM-2
 	url = https://github.com/IDEA-Research/Grounded-SAM-2
+	branch = main
+[submodule "part1_cv/yolov11-seg_ros/ultralytics"]
+	branch = main
