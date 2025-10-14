@@ -53,6 +53,7 @@ export PYOPENGL_PLATFORM=egl
 export EGL_PLATFORM=drm
 unset DISPLAY
 export WANDB_DISABLED=true
+
 python train.py \
 --config-dir=. \
 --config-name=image_pusht_diffusion_policy_cnn.yaml \
