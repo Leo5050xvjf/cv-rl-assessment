@@ -63,6 +63,8 @@ bash train.sh
 
 ## Results
 
+1. XXX/cv-rl-assessment/part1_cv/yolov11-seg_ros/ultralytics/train.ipynb
+
 | Label Visualization | Detection Results |
 |----------------------|-------------------|
 | ![Labels](res/labels.jpg) | ![Results](res/results.png)|
