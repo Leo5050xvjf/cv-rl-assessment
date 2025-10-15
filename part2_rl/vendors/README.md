@@ -1,7 +1,5 @@
 # Diffusion Policy Environment Setup and Evaluation Guide
 
-
-
 ## 0. 環境
 ```bash
 Development Environment: Remote VSCode + WSL2 (Ubuntu 24.04)
@@ -92,5 +90,17 @@ training.device=cuda:0
 1. 在 **50 epochs 以前**，模型幾乎無法穩定找到方塊位置，或一旦出現偏差就無法修正。  
 2. 在 **50 epochs 之後**，可明顯感受到模型更容易維持方塊於目標區域內。  
 3. 即使在後期，當發生較大偏差時，模型仍會陷入無法回復正確軌跡的情況。
+
+
+
+## 環境設定（Setup）
+1. **OS:** Ubuntu 24.04  
+2. **開發環境:** WSL2 + VSCode  
+3. **工具:** GDSAM2 + Ultralytics YOLOv11n-seg  
+
+## 結果（results）
+1. **v1**: 在 80epoch 時
+實作過程（implementation process）
+分析與觀察（analysis and observations）
 
 
