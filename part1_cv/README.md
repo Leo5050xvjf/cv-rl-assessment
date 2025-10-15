@@ -4,7 +4,7 @@ This section describes how to process ROS bag data, generate training data with 
 
 ---
 
-## 1. Clone the Repository
+## 1. Clone the Repository(If you haven’t cloned it yet)
 
 ```bash
 git clone --recursive git@github.com:Leo5050xvjf/cv-rl-assessment.git
