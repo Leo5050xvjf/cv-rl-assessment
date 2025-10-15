@@ -1,5 +1,3 @@
----
-
 ## 1. Clone the Repository(If you haven’t cloned it yet)
 
 ```bash
