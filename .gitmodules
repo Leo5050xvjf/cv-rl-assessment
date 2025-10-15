@@ -8,7 +8,7 @@
 	branch = main
 [submodule "part1_cv/vendors/Grounded-SAM-2"]
 	path = part1_cv/vendors/Grounded-SAM-2
-	url = https://github.com/IDEA-Research/Grounded-SAM-2
+	url = git@github.com:Leo5050xvjf/Grounded-SAM-2.git
 	branch = main
 [submodule "part1_cv/yolov11-seg_ros/ultralytics"]
 	branch = main
